@@ -18,7 +18,8 @@
 
   <div class="main-container ">
 <div class="img-container">
-    <img src="assets/images/illustration-sign-up-mobile.svg" alt="mobile-img" />
+    <img src="assets/images/illustration-sign-up-mobile.svg" alt="mobile-img" class="mobile-img"/>
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt="desktop-img " class="desktop-img"/>
 </div>
 
 <div class="form-container">
@@ -43,8 +44,11 @@
   </ul>
   
   <form>
-  <label for="email">Email adress</label><br>
-  <input placeholder="email@company.com" type="email" name="email" required/>
+  <div class="input-label-cluster" >
+  <label class="label" for="email">Email adress</label>
+  <label class="error-label label hidden" for="email">Valid mail required</label>
+  </div>
+  <input placeholder="email@company.com" type="email" name="email" minlength="11" required/>
 </form>
 
   <button class="button-subscribe"> Subscribe to monthly newsletter</button>
