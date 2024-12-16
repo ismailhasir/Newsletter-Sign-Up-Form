@@ -96,12 +96,12 @@ input{
   border-radius: 0.5rem;
   margin-top: 0.5rem;
   cursor: pointer;
-  border: 1px solid var(--Grey) !important;
 }
 
-.input:invalid{
+.input-invalid{
   border: 1px solid var(--Tomato);
   color: var(--Tomato);
+  
 }
 
 button{
@@ -112,6 +112,7 @@ button{
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 button:hover{
